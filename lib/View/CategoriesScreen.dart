@@ -27,14 +27,13 @@ class _CategoriesscreenState extends State<Categoriesscreen> {
                 var appData = ProductsCubit.get(context).CategoryModel[index];
                 return InkWell(
                   onTap: () {
-                    if (appData!= null) {
-                    
+                    if (appData != null) {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => ProductScreen(),
                           ));
-                    } 
+                    }
                   },
                   child: Container(
                       padding: EdgeInsets.all(16.0),
